@@ -32,6 +32,7 @@ else
   echo no tokens or credentials supplied
 fi
 
+echo "Running dbt deps"
 dbt deps
 
 DBT_ACTION_LOG_FILE=${DBT_ACTION_LOG_FILE:="dbt_console_output.txt"}
